@@ -1,0 +1,41 @@
+{
+  "name": "kiss-vtms",
+  "version": "1.0.0",
+  "description": "KISS Vocational Training Management System (KISS-VTMS) - Kalinga Institute of Social Sciences, Bhubaneswar, Odisha",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev:backend": "node backend/src/server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "seed": "node backend/src/seeders/seed.js",
+    "test": "node backend/src/tests/run_tests.js"
+  },
+  "keywords": [
+    "kiss",
+    "vocational-training",
+    "skill-development",
+    "tribal-empowerment",
+    "certificate-generation",
+    "pdfkit",
+    "react",
+    "express"
+  ],
+  "author": "Kalinga Institute of Social Sciences (KISS)",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.10.2",
+    "pdfkit": "^0.15.0",
+    "qrcode": "^1.5.3",
+    "sqlite3": "^5.1.7"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
